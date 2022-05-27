@@ -422,9 +422,9 @@ function reducer (state = initialState, action) {
     case MOVE_PIECE:
       const newBoard = [...state.board];
 
-      newBoard[c][d].piece = state.board[state.activeDiv.y][state.activeDiv.x].piece;
+      newBoard[action.payload.c][action.payload.d].piece = state.board[state.activeDiv.y][state.activeDiv.x].piece;
 
-      newBoard[a][b].piece = '';
+      newBoard[action.payload.a][action.payload.b].piece = '';
 
       return { ...state, 
                board: newBoard,
