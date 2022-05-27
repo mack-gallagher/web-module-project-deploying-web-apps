@@ -18,8 +18,10 @@ export const movePiece = ([a,b],[c,d]) => {
     {
       type: MOVE_PIECE,
       payload: {
-                 src: [a,b],
-                 dst: [c,d],
+                 a: a,
+                 b: b,
+                 c: c,
+                 d: d,
                }
     }
   )

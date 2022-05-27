@@ -57,12 +57,10 @@
   width: 50vw;
   height: 50vw;
   flex-direction: column;
-  border: 1px solid green;
 }
 
 .row {
   height: 12.5%;
-  border: 1px solid red;
   display: flex;
 }
 
@@ -73,7 +71,6 @@
   width: 12.5%;
   justify-content: center;
   align-items: center;
-  border: 1px solid blue;
 }
 
 .dark {
