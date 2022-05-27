@@ -424,6 +424,10 @@ function reducer (state = initialState, action) {
 
       const ourPiece = state.board[state.activeDiv[0]][state.activeDiv[1]].piece;
 
+      if (!ourPiece) {
+        return { ...state, activeDiv: [null,null] };
+      }
+
       newBoard[state.activeDiv[0]][state.activeDiv[1]].piece = '';
       newBoard[action.payload.c][action.payload.d].piece = ourPiece;
 
